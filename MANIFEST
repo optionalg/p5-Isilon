@@ -1,0 +1,8 @@
+MANIFEST
+Makefile.PL
+lib/Isilon.pm
+lib/Isilon/Cluster.pm
+lib/Isilon/Node.pm
+lib/Isilon/SyncIQ.pm
+README
+CHANGES
