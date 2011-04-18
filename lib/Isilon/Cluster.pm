@@ -140,7 +140,7 @@ Isilon::Cluster - Interface for an Isilon Cluster
 	use Isilon::Cluster;
 
 	my $isi = new Isilon::Cluster(
-		-hostname  => 'beaker',
+		-hostname  => 'wopr',
 		-community => 'public',
 		-version   => '2c'
 	);
@@ -162,6 +162,24 @@ Net::SNMP module to do the SNMP calls.
 Creates a new Isilon::Cluster object
 
 	my $isi = Isilon::Cluster->new([OPTIONS]);
+
+=head2 name
+
+Return the name of the Isilon cluster
+
+	print $isi->name();
+
+=head2 guid
+
+Return the globally unique identifier of the Isilon cluster
+
+	print $isi->guid();
+
+=head2 nodecount
+
+Return the total number of configured nodes in the cluster
+
+	print $isi-nodecount();
 
 =head1 BUGS
 
